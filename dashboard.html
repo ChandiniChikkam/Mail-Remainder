@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mail Reminder Dashboard</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+
+</head>
+
+<body>
+
+    <!-- ===========================================
+                SIDEBAR
+    ============================================ -->
+
+    <aside class="sidebar">
+
+        <!-- Logo -->
+
+        <div class="logo">
+
+            <div class="logo-icon">
+
+                <i class="fa-solid fa-envelope-open-text"></i>
+
+            </div>
+
+            <div>
+
+                <h2>Mail Reminder</h2>
+
+                <p>AI Dashboard</p>
+
+            </div>
+
+        </div>
+
+        <!-- ========================= -->
+
+        <div class="menu-section">
+
+            <h5>MONITOR</h5>
+
+            <ul class="sidebar-menu">
+
+                <li id="overview"
+                    class="active"
+                    onclick="showSection('overview')">
+
+                    <i class="fas fa-table-columns"></i>
+
+                    <span>Overview</span>
+
+                </li>
+
+                <li id="emails"
+                    onclick="showSection('emails')">
+
+                    <i class="fas fa-envelope"></i>
+
+                    <span>All Emails</span>
+
+                    <span class="badge">142</span>
+
+                </li>
+
+                <li id="actionItems"
+                    onclick="showSection('actionItems')">
+
+                    <i class="fas fa-list-check"></i>
+
+                    <span>Action Items</span>
+
+                    <span class="badge red">18</span>
+
+                </li>
+
+            </ul>
+
+        </div>
+
+        <!-- ========================= -->
+
+        <div class="menu-section">
+
+            <h5>INSIGHTS</h5>
+
+            <ul class="sidebar-menu">
+
+                <li id="topics"
+                    onclick="showSection('topics')">
+
+                    <i class="fas fa-chart-line"></i>
+
+                    <span>Topics</span>
+
+                </li>
+
+                <li id="people"
+                    onclick="showSection('people')">
+
+                    <i class="fas fa-users"></i>
+
+                    <span>People</span>
+
+                </li>
+
+                <li id="decisions"
+                    onclick="showSection('decisions')">
+
+                    <i class="fas fa-circle-check"></i>
+
+                    <span>Decisions</span>
+
+                </li>
+
+            </ul>
+
+        </div>
+
+        <!-- ========================= -->
+
+        <div class="sidebar-bottom">
+
+            <div class="sync-status">
+
+                <span class="live-dot"></span>
+
+                Live Sync
+
+            </div>
+
+            <p>Last updated 2 min ago</p>
+
+        </div>
+
+    </aside>
+
+    <!-- ===========================================
+                    MAIN CONTENT
+    ============================================ -->
+
+    <main class="main-content">
+
+        <!-- Header -->
+
+        <header class="topbar">
+
+            <div class="page-title">
+
+                <h1 id="pageTitle">
+
+                    Overview
+
+                </h1>
+
+                <p>
+
+                    AI-powered Mail Dashboard
+
+                </p>
+
+            </div>
+
+            <div class="top-right">
+
+                <!-- Search -->
+
+                <div class="top-search">
+
+                    <i class="fa-solid fa-magnifying-glass"></i>
+
+                    <input
+                        type="text"
+                        placeholder="Search emails, people, projects...">
+
+                </div>
+
+                <!-- Notification -->
+
+                <button class="icon-btn">
+
+                    <i class="fa-regular fa-bell"></i>
+
+                </button>
+
+                <!-- Refresh -->
+
+                <button class="icon-btn">
+
+                    <i class="fa-solid fa-rotate-right"></i>
+
+                </button>
+
+                <!-- User -->
+
+                <div class="user-box">
+
+                    <img src="">
+
+                    <div>
+
+                        <h4>Admin</h4>
+
+                        <span>Administrator</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </header>
+
+        <!-- ===================================== -->
+
+        <section id="contentArea">
+
+            <!-- Dashboard.js loads content here -->
+
+        </section>
+
+    </main>
+
+    <script src="../js/dashboard.js"></script>
+
+</body>
+
+</html>
